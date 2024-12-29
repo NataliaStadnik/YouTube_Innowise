@@ -1,0 +1,7 @@
+@mixin font-style($b, $c, $d, $e) {
+  font-family: 'Mulish', sans-serif;
+  color: $b;
+  font-weight: $c;
+  font-size: $d;
+  line-height: $e;
+}
