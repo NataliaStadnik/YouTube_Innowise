@@ -9,7 +9,57 @@
 </head>
 
 <body>
+  <h1 class="visually-hidden">YouTube</h1>
 
+  <header class="header">
+    <div class="container header__container">
+
+      <div class="logo-wrapper">
+        <button class="btn-reset burger">
+          <span class="burger__item"></span>
+        </button>
+        <a class="header__logo" href="#">
+          <svg class="img header__img">
+            <use xlink:href="#icon"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="input-wrapper">
+        <input class="input-reset input header__input" type="search" name="search" placeholder="Search">
+      </div>
+
+      <div class="right header__right">
+        <ul class="list-reset icons-list">
+          <li class="icons-list__item">
+            <button class="btn-reset icons-list__btn">
+              <svg>
+                <use xlink:href="#camera"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="icons-list__item">
+            <button class="btn-reset icons-list__btn">
+              <svg>
+                <use xlink:href="#dots"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="icons-list__item">
+            <button class="btn-reset icons-list__btn icons-list__btn--bell">
+              <svg>
+                <use xlink:href="#bell"></use>
+              </svg>
+            </button>
+          </li>
+        </ul>
+
+        <a class="profile" href="#">
+          <img class="img profile__img" src="#" alt="User photo">
+        </a>
+      </div>
+    </div>
+  </header>
 </body>
 
 </html>
