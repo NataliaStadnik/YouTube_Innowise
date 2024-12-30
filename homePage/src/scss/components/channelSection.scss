@@ -1,0 +1,28 @@
+@use '../vendor/vars'as *;
+@use '../vendor/fonts'as *;
+@use '../vendor/mixin'as *;
+
+.channel {
+  padding: 25px 0;
+
+  &__wrapper {
+    margin-right: auto;
+  }
+
+  .arrows {
+    padding-bottom: 4px;
+  }
+}
+
+.wrapper__info {
+  @include font-style($b:$color-light-grey, $c:400, $d:16px, $e:20.08px);
+}
+
+.subscribe {
+  margin-right: 41px;
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: $color-red;
+  border-radius: 30px;
+  @include font-style($b:$color-white, $c:400, $d:16px, $e:20.08px);
+}
