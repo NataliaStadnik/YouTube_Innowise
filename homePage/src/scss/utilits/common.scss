@@ -71,6 +71,13 @@ input:focus-visible {
   cursor: pointer;
 }
 
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
 
 .btn-reset {
   border: none;
@@ -142,6 +149,14 @@ input:focus-visible {
   gap: 40px;
   overflow-x: scroll;
 
+  &__link:focus-visible .article .article__title {
+    outline: 1px solid $color-red;
+  }
+
+  &__link:hover:not(:focus-visible) .article {
+    opacity: 70%;
+  }
+
   &__details {
     display: flex;
     justify-content: space-between;
@@ -156,6 +171,7 @@ input:focus-visible {
 .article {
   display: flex;
   flex-direction: column;
+  transition: opacity .2s ease-in;
 
   &__img {
     margin-bottom: 10px;
@@ -186,6 +202,12 @@ input:focus-visible {
     border-radius: 50px;
     width: 28px;
     height: 28px;
+    transition: background-color .2s ease-in;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-red;
+    }
 
     &::before {
       position: absolute;

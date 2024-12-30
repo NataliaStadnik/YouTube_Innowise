@@ -5,6 +5,30 @@
 .channel {
   padding: 25px 0 58px;
 
+  &__1::before {
+    content: '7:36';
+  }
+
+  &__2::before {
+    content: '2:19';
+  }
+
+  &__3::before {
+    content: '9:05';
+  }
+
+  &__4::before {
+    content: '3:40';
+  }
+
+  &__5::before {
+    content: '1:56';
+  }
+
+  &__6::before {
+    content: '4:15';
+  }
+
   &__wrapper {
     margin-right: auto;
   }
