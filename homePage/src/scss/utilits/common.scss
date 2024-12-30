@@ -1,3 +1,8 @@
+@use '../vendor/vars' as *;
+@use '../vendor/fonts' as *;
+@use '../vendor/mixin' as *;
+@use './normalize.css' as *;
+
 html {
   box-sizing: border-box;
 }
@@ -14,9 +19,11 @@ h3 {
   margin: 0;
 }
 
+
 body {
-  padding: 0 30px;
-  @include font-style($color-title-black, 400, 16px, 20.08px);
+  width: 1920px;
+  margin: 0 auto;
+  @include font-style($b:$color-title-black, $c:400, $d:16px, $e:20.08px);
 }
 
 a {
@@ -92,4 +99,10 @@ input:focus-visible {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.container {
+  max-width: 1920px;
+  padding: 0 30px;
+  width: 100%;
 }
