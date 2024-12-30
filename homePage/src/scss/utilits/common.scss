@@ -112,7 +112,7 @@ input:focus-visible {
 .main {
   display: flex;
   column-gap: 40px;
-  height: calc(100vh - 100px);
+  // height: calc(100vh - 100px);
   overflow: hidden;
 }
 

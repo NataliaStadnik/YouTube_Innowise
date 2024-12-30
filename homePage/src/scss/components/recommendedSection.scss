@@ -1,0 +1,16 @@
+
+.recommended {
+  padding: 5px 0 25px;
+
+  &__1::before {
+    content: '3:40';
+  }
+
+  &__2::before {
+    content: '2:12';
+  }
+
+  &__3::before {
+    content: '2:12';
+  }
+}
