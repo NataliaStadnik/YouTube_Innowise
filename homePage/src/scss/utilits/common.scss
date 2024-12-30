@@ -15,7 +15,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
 }
 
@@ -23,6 +24,8 @@ h3 {
 body {
   width: 1920px;
   margin: 0 auto;
+  padding: 0 30px;
+  background-color: $color-white;
   @include font-style($b:$color-title-black, $c:400, $d:16px, $e:20.08px);
 }
 
@@ -103,6 +106,12 @@ input:focus-visible {
 
 .container {
   max-width: 1920px;
-  padding: 0 30px;
   width: 100%;
+}
+
+.main {
+  display: flex;
+  column-gap: 40px;
+  height: calc(100vh - 100px);
+  overflow: hidden;
 }
