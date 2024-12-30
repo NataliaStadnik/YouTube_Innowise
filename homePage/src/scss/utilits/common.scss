@@ -21,9 +21,6 @@ p {
 
 
 body {
-  width: 1920px;
-  margin: 0 auto;
-  padding: 0 30px;
   background-color: $color-white;
   @include font-style($b:$color-title-black, $c:400, $d:16px, $e:20.08px);
   overflow: hidden;
@@ -112,13 +109,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .container {
-  max-width: 1920px;
-  width: 100%;
+  width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .main {
   display: flex;
-  column-gap: 40px;
+  column-gap: 18px;
+  padding: 0 0 0 30px;
   height: calc(100vh - 100px);
   overflow: hidden;
 }
@@ -128,7 +127,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-wrapper {
-  flex-basis: 88%;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -147,6 +145,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .list {
   display: flex;
   gap: 40px;
+  padding-right: 30px;
   overflow-x: scroll;
 
   &__link:focus-visible .article .article__title {
@@ -185,7 +184,9 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .upper {
   display: flex;
+  width: 91%;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 29px;
 }
 
@@ -193,7 +194,6 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   gap: 10px;
   align-self: flex-end;
-  padding-right: 119px;
 
   &__left,
   &__right {
