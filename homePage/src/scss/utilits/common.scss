@@ -1,7 +1,6 @@
 @use '../vendor/vars'as *;
 @use '../vendor/fonts'as *;
 @use '../vendor/mixin'as *;
-@use './normalize.css'as *;
 
 html {
   box-sizing: border-box;
@@ -27,6 +26,7 @@ body {
   padding: 0 30px;
   background-color: $color-white;
   @include font-style($b:$color-title-black, $c:400, $d:16px, $e:20.08px);
+  overflow: hidden;
 }
 
 a {
@@ -112,7 +112,7 @@ input:focus-visible {
 .main {
   display: flex;
   column-gap: 40px;
-  // height: calc(100vh - 100px);
+  height: calc(100vh - 100px);
   overflow: hidden;
 }
 
@@ -122,7 +122,8 @@ input:focus-visible {
 
 .main-wrapper {
   flex-basis: 88%;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .wrapper {
@@ -139,6 +140,7 @@ input:focus-visible {
 .list {
   display: flex;
   gap: 40px;
+  overflow-x: scroll;
 
   &__details {
     display: flex;
