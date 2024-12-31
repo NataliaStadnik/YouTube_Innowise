@@ -1,0 +1,106 @@
+@use '../vendor/vars'as *;
+@use '../vendor/fonts'as *;
+@use '../vendor/mixin'as *;
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  width: 241px;
+  flex-shrink: 0;
+  row-gap: 58px;
+  padding: 25px 0 40px 0;
+  overflow: scroll;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  color: $color-grey;
+
+  &__item:nth-child(1) {
+    color: $color-red;
+
+    a svg path {
+      fill: $color-red;
+      opacity: 100%;
+    }
+  }
+
+  &__item:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    transition: color .2s ease-in;
+
+    svg path {
+      transition: fill .2s ease-in, opacity .2s ease-in;
+    }
+  }
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus-visible {
+  color: $color-red;
+
+  svg path {
+    fill: $color-red;
+    opacity: 100%;
+  }
+}
+
+.subscriptions {
+  margin-bottom: 46px;
+
+  &__title {
+    margin-bottom: 30px;
+    @include font-style($b:$color-black, $c:700, $d:18px, $e:20.08px);
+  }
+}
+
+.subscriptions-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+
+  &__link {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: $color-grey;
+    transition: color .2s ease-in;
+
+    &:hover,
+    &:focus-visible,
+    &:active {
+      color: $color-red;
+    }
+  }
+}
+
+.settings {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: $color-grey;
+  transition: color .2s ease-in;
+
+  &:hover,
+  &:focus-visible,
+  &:active {
+    color: $color-red;
+
+    svg path {
+      fill: $color-red;
+      opacity: 100%;
+    }
+  }
+
+  svg path {
+    transition: fill .2s ease-in, opacity .2s ease-in;
+  }
+}

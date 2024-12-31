@@ -1,6 +1,7 @@
-@import './vendor/vars';
-@import './vendor/fonts';
-@import './vendor/mixin';
-
-@import './utilits/normalize.css';
-@import './utilits/common.scss';
+@use '../scss/utilits/common.scss' as *;
+@use './components/header.scss' as *;
+@use './components/guideSection.scss' as *;
+@use './components/personalSection.scss' as *;
+@use './components/recommendedSection.scss' as *;
+@use './components/channelSection.scss' as *;
+@use '../scss/utilits/media.scss' as *;
