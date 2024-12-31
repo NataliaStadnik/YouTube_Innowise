@@ -127,8 +127,11 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-wrapper {
+  margin-left: -25px;
+  background-color: $color-white;
   overflow-x: hidden;
   overflow-y: scroll;
+  z-index: 50;
 }
 
 .wrapper {
@@ -146,6 +149,7 @@ input[type="search"]::-webkit-search-results-decoration {
   display: flex;
   gap: 40px;
   padding-right: 30px;
+  padding-bottom: 60px;
   overflow-x: scroll;
 
   &__link:focus-visible .article .article__title {
