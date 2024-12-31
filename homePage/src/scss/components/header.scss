@@ -3,6 +3,7 @@
 @use '../vendor/mixin'as *;
 
 .header {
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 25px;
 
@@ -83,7 +84,8 @@
 
 .input-wrapper {
   position: relative;
-  width: 830px;
+  width: 100%;
+  max-width: 830px;
   margin-right: auto;
 
   &__img {
@@ -151,8 +153,37 @@
     transition: fill .2s ease-in, opacity .2s ease-in;
   }
 
-  &__btn:hover svg path {
+  &__btn:hover svg path,
+  &__btn:focus-visible svg path {
     fill: $color-red;
     opacity: 100%;
+  }
+}
+
+
+.search-btn {
+  display: none;
+
+  svg path {
+    transition: fill .2s ease-in, opacity .2s ease-in;
+  }
+
+  &:hover svg path,
+  &:focus-visible svg path {
+    fill: $color-red;
+    opacity: 100%;
+  }
+}
+
+.profile {
+  transition: color .2s ease-in, transform .2s ease-in;
+
+  &:hover:not(:focus-visible) {
+    transform: scale(108%);
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-red;
+    outline-offset: 5px;
   }
 }

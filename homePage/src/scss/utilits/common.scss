@@ -109,14 +109,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .container {
-  width: 1920px;
+  width: 100%;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .main {
   display: flex;
-  column-gap: 18px;
+  column-gap: 10px;
   padding: 0 0 0 30px;
   height: calc(100vh - 100px);
   overflow: hidden;
@@ -151,6 +152,10 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-right: 30px;
   padding-bottom: 60px;
   overflow-x: scroll;
+
+  &__item {
+    flex-basis: 15%;
+  }
 
   &__link:focus-visible .article .article__title {
     outline: 1px solid $color-red;
