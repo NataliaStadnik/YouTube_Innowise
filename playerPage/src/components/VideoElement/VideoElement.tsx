@@ -15,7 +15,7 @@ interface VideoElementProps {
 const VideoElement: FC<VideoElementProps> = ({ props }) => {
   return (
     <li className="video-list__item">
-      <Link to={"/"}>
+      <Link className="video-list__link" to={"/"}>
         <article className="article">
           <div className="img__wrapper">
             <img

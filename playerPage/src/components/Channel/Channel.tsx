@@ -7,7 +7,7 @@ const Channel = () => {
     <div className="channel channel__wrapper">
       <img className="channel__img" src={channel} alt="Channel: Food & Drink" />
       <div className="channel__info">
-        <Link to={"/"}>
+        <Link className="channel__link" to={"/"}>
           <h3 className="title channel__title">Food &amp;&nbsp;Drink</h3>
         </Link>
 
@@ -22,7 +22,7 @@ const Channel = () => {
           ad&nbsp;placement, demographic, even the consumer&rsquo;s mood when
           they see your&nbsp;ad.
         </p>
-        <button className="details">Show more</button>
+        <button className="details channel__details">Show more</button>
       </div>
       <p className="subscribe">Subscribe&nbsp;2.3m</p>
     </div>

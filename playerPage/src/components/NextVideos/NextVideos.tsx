@@ -11,7 +11,7 @@ const NextVideos = () => {
       </div>
       <ul className="video-list">
         {mocksVideos.map((elem) => (
-          <VideoElement props={elem} />
+          <VideoElement key={crypto.randomUUID()} props={elem} />
         ))}
       </ul>
     </section>

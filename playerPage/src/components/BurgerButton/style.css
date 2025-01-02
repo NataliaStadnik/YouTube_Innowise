@@ -2,6 +2,7 @@
   width: max-content;
   height: 17px;
   margin-right: 30px;
+  transition: outline .2s ease-in;
 }
 
 .burger__item {
@@ -44,4 +45,9 @@
 .burger:hover .burger__item::before,
 .burger:hover .burger__item::after {
   background-color: var(--color-red);
+}
+
+.burger:focus-visible {
+  outline: 1px solid var(--color-red);
+  outline-offset: 5px;
 }

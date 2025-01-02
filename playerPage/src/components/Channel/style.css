@@ -9,6 +9,7 @@
 }
 
 .channel__title {
+  width: max-content;
   margin-bottom: 4px;
 }
 
@@ -23,6 +24,19 @@
   opacity: 60%;
 }
 
+.channel__link .title {
+  transition: color .2s ease-in;
+}
+
+.channel__link:hover .title {
+  color: rgba(0, 0, 0, .6);
+}
+
+.channel__link:focus-visible .title {
+  outline: 1px solid var(--color-black);
+  outline-offset: 3px;
+}
+
 .published {
   margin-bottom: 14px;
   font-size: 13px;
@@ -35,4 +49,18 @@
   background-color: var(--color-red);
   border-radius: 30px;
   color: var(--color-white);
+}
+
+.channel__details {
+  transition: color .2s ease-in, outline .2s ease-in;
+}
+
+.channel__details:hover {
+  color: var(--color-black);
+}
+
+.channel__details:focus-visible {
+  outline: 1px solid var(--color-black);
+  outline-offset: 5px;
+  color: var(--color-black);
 }

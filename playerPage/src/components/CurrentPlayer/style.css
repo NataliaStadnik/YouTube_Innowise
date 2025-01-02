@@ -4,6 +4,7 @@
 }
 
 .video-img {
+  width: 100%;
   max-width: 1363px;
   margin-bottom: 20px;
 }

@@ -23,3 +23,15 @@
   border-radius: 20px;
   color: var(--color-white);
 }
+
+.video-list__link .article {
+  transition: opacity .2s ease-in;
+}
+
+.video-list__link:focus-visible .article .title {
+  outline: 1px solid var(--color-red);
+}
+
+.video-list__link:hover:not(:focus-visible) .article {
+  opacity: 70%;
+}
