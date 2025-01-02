@@ -1,0 +1,17 @@
+.actions-list__item:not(:last-child) .actions-list__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(235, 235, 235, .3);
+  color: var(--color-video-black);
+}
+
+.actions-list__item:nth-child(2) button svg {
+  transform: rotate(180deg);
+}
+
+.actions-list__item:nth-child(3) {
+  margin-right: 30px;
+}

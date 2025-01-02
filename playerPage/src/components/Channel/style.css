@@ -1,0 +1,38 @@
+.channel__wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.channel__img {
+  width: 80px;
+  height: 80px;
+}
+
+.channel__title {
+  margin-bottom: 4px;
+}
+
+.channel__info {
+  max-width: 820px;
+  margin-right: auto;
+}
+
+.channel__descr {
+  margin-bottom: 15px;
+  line-height: 22px;
+  opacity: 60%;
+}
+
+.published {
+  margin-bottom: 14px;
+  font-size: 13px;
+  color: var(--color-light-grey);
+}
+
+.subscribe {
+  align-self: flex-start;
+  padding: 10px 22px;
+  background-color: var(--color-red);
+  border-radius: 30px;
+  color: var(--color-white);
+}

@@ -37,6 +37,7 @@ p {
   --color-black: #000000;
   --color-title-black: #19202C;
   --color-menu-black: #1F2022;
+  --color-video-black: #192646;
 
   --color-grey: #898989;
   --color-light-grey: #C2C2C2;
@@ -57,7 +58,6 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 20.08px;
-  overflow: hidden;
 }
 
 a {

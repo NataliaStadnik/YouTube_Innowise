@@ -1,4 +1,5 @@
 import "./app.css";
+import Channel from "./components/Channel/Channel";
 import CurrentPlayer from "./components/CurrentPlayer/CurrentPlayer";
 import Header from "./components/Header/Header";
 import NextVideos from "./components/NextVideos/NextVideos";
@@ -15,7 +16,10 @@ const App = () => {
       <h1 className="visually-hidden">YouTube</h1>
       <Header />
       <main className="main container">
-        <CurrentPlayer />
+        <section className="current-player">
+          <CurrentPlayer />
+          <Channel />
+        </section>
         <NextVideos />
       </main>
     </BrowserRouter>
