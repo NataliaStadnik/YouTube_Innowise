@@ -1,0 +1,35 @@
+.next-videos {
+  padding-bottom: 50px;
+}
+
+.video-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.next-videos__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.title__autoplay {
+  position: relative;
+  padding-right: 54px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.title__autoplay::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 2px;
+  width: 24px;
+  height: 24px;
+  border-radius: 30px;
+  background-color: #2196F3;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,33 @@
+.guide__title {
+  font-size: 10px;
+  line-height: 12.55px;
+  color: var(--color-grey);
+}
+
+.nav-list__link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  transition: color .2s ease-in;
+}
+
+.nav-list__item:first-child {
+  margin-right: 13px;
+}
+
+
+.nav-list__link:hover,
+.nav-list__link:focus-visible {
+  color: var(--color-red);
+}
+
+.nav-list__link svg path {
+  transition: fill .2s ease-in, opacity .2s ease-in;
+}
+
+.nav-list__link:hover svg path,
+.nav-list__link:focus-visible svg path {
+  fill: var(--color-red);
+  opacity: 100%;
+}

@@ -1,0 +1,43 @@
+@media (max-width: 520px) {
+  .channel {
+    padding: 0 16px;
+  }
+
+  .channel__img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .channel__title {
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: inherit;
+  }
+
+  .subscribe {
+    top: 50%;
+    right: 5px;
+    padding: 0;
+    color: var(--color-red);
+    background: none;
+    transform: translateY(-50%);
+    transition: outline .2s ease-in, color .2s ease-in;
+  }
+
+  .subscribe:focus-visible {
+    outline: 1px solid var(--color-red);
+    outline-offset: 5px;
+  }
+
+  .subscribe:hover:not(:focus-visible) {
+    color: var(--color-placeholder-grey);
+  }
+
+  .left {
+    padding: 6px 0;
+  }
+
+  .published {
+    margin-bottom: 0;
+  }
+}

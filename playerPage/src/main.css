@@ -1,0 +1,117 @@
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Regular"),
+    url('./assets/fonts/Mulish-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: local("Mulish-Bold"),
+    url('./assets/fonts/Mulish-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+#root {
+  --color-black: #000000;
+  --color-title-black: #19202C;
+  --color-menu-black: #1F2022;
+  --color-video-black: #192646;
+
+  --color-grey: #898989;
+  --color-light-grey: #C2C2C2;
+  --color-placeholder-grey: #30384C;
+  --color-icon-grey: rgba(0, 0, 0, .24);
+
+  --color-bgr-grey-light: rgb(235, 235, 235);
+  --color-bgr-grey-dark: rgba(0, 0, 0, .3);
+
+  --color-red: #FF0000;
+  --color-white: #FFFFFF;
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-title-black);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20.08px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  appearance: none;
+}
+
+button:active,
+button:hover,
+button:focus,
+button:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+
+input:active,
+input:focus,
+input:hover,
+input:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

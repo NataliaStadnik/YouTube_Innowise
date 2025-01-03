@@ -1,0 +1,25 @@
+@media (max-width: 1440px) {
+  .right {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 520px) {
+  .header {
+    padding: 12px 0 23px;
+  }
+
+  .header__container {
+    gap: 24px;
+  }
+
+  .logo-wrapper {
+    margin-right: auto;
+  }
+}

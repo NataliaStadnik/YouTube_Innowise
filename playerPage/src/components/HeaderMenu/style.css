@@ -1,0 +1,35 @@
+.icons-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.icons-list__btn svg path {
+  transition: fill .2s ease-in, opacity .2s ease-in;
+}
+
+.icons-list__btn:hover svg path,
+.icons-list__btn:focus-visible svg path {
+  fill: var(--color-red);
+  opacity: 100%;
+}
+
+.icons-list__item:last-child button {
+  position: relative;
+}
+
+.icons-list__item:last-child button::before {
+  position: absolute;
+  content: '3';
+  top: -5px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 520px) {
+  .icons-list__item:last-child button::before {
+    display: none;
+  }
+
+  .icons-list__item:last-child {
+    transform: rotate(90deg)
+  }
+
+  .icons-list__btn svg {
+    width: 19px;
+  }
+
+  .icons-list {
+    gap: 35px;
+  }
+}

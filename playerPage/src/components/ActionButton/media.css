@@ -1,0 +1,9 @@
+@media (max-width: 520px) {
+  .actions-list__item:last-child {
+    display: none;
+  }
+
+  .actions-list__item .actions-list__btn {
+    padding: 10px 15px;
+  }
+}
