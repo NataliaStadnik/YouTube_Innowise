@@ -1,4 +1,4 @@
-.actions-list__item:not(:last-child) .actions-list__btn {
+.actions-list__item .actions-list__btn {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -9,12 +9,13 @@
   transition: background-color .2s ease-in;
 }
 
-.actions-list__item:nth-child(2) button svg {
-  transform: rotate(180deg);
+.actions-list__item:last-child .actions-list__btn {
+  background-color: transparent;
+  padding: 0;
 }
 
 .actions-list__item:nth-child(3) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .actions-list__item:not(:last-child):hover .actions-list__btn {

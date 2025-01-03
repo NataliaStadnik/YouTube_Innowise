@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 interface svgProps {
-  classNames: string;
+  classNames?: string;
 }
 
 const Search: FC<svgProps> = ({ classNames }) => {

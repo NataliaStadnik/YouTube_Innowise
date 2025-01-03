@@ -25,10 +25,11 @@
 .title__autoplay::before {
   position: absolute;
   content: '';
-  top: 5px;
+  top: 50%;
   right: 2px;
   width: 24px;
   height: 24px;
   border-radius: 30px;
   background-color: #2196F3;
+  transform: translateY(-50%);
 }

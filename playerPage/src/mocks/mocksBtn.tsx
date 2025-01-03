@@ -1,4 +1,5 @@
 import BtnDots from "../assets/svg/BtnDots";
+import Dislike from "../assets/svg/Dislike";
 import Like from "../assets/svg/Like";
 import Share from "../assets/svg/Share";
 
@@ -8,7 +9,7 @@ export const mocksBtn = [
     text: "123k",
   },
   {
-    img: <Like />,
+    img: <Dislike />,
     text: "435k",
   },
   {

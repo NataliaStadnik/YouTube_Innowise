@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./style.css";
+import "./media.css";
 import { FC } from "react";
 
 interface VideoElementProps {

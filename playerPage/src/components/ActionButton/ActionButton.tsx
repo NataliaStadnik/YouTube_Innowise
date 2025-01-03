@@ -1,5 +1,6 @@
 import { FC } from "react";
 import "./style.css";
+import "./media.css";
 
 interface ActionButtonProps {
   elem: JSX.Element;

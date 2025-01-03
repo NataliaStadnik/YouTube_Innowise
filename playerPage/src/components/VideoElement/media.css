@@ -1,0 +1,42 @@
+@media (max-width: 1440px) {
+  .article__img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 920px) {
+  .article__img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    width: max-content;
+  }
+
+  .article__img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .article {
+    width: 100%;
+  }
+
+  .article__img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .img__wrapper {
+    margin-bottom: 9px;
+  }
+
+  .next-videos__title {
+    margin-bottom: 3px;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

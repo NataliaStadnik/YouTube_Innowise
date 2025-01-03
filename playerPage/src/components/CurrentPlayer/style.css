@@ -27,3 +27,8 @@
 .actions__details {
   padding: 10px 0;
 }
+
+.header-wrapper {
+  display: flex;
+  margin-bottom: 2px;
+}

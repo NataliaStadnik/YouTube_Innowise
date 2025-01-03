@@ -1,4 +1,5 @@
 import "./style.css";
+import "./media.css";
 import { mocksVideos } from "../../mocks/mocksVideo";
 import VideoElement from "../VideoElement/VideoElement";
 
