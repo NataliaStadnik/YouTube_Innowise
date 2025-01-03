@@ -4,6 +4,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = (env) => ({
   mode: 'production',
@@ -45,19 +46,6 @@ module.exports = (env) => ({
         },
       },
       {
-        test: /\.(png|jpe?g)$/i,
-        loader: 'file-loader',
-        options: {
-          name() {
-            env.prod ? '[contenthash].[ext]' : '[path][name].[ext]';
-          },
-        },
-      },
-      {
-        test: /\.woff2$/i,
-        type: 'asset/resource',
-      },
-      {
         test: /\.scss$/i,
         use: [
           env.prod ? MiniCssExtractPlugin.loader : 'style-loader',
@@ -82,6 +70,9 @@ module.exports = (env) => ({
     }),
     new MiniCssExtractPlugin({
       filename: 'main.[contenthash].css',
+    }),
+    new CopyPlugin({
+      patterns: [{ from: `./src/assets`, to: 'assets' }],
     }),
   ],
 
