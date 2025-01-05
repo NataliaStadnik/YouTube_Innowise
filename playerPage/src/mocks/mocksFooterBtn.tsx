@@ -5,18 +5,22 @@ import Trending from "../assets/svg/Trending";
 
 export const mocksFooterBtn = [
   {
+    id: 1,
     img: <Home />,
     text: "Home",
   },
   {
+    id: 2,
     img: <Trending />,
     text: "Trending",
   },
   {
+    id: 3,
     img: <Subscriptions />,
     text: "Subscriptions",
   },
   {
+    id: 4,
     img: <Library />,
     text: "Library",
   },

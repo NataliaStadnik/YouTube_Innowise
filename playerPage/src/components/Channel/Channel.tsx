@@ -23,11 +23,9 @@ const Channel = () => {
               {isMobile ? "245K subscribed" : "Published Jun 2019"}
             </p>
           </div>
-          {!isMobile ? (
-            <p className="subscribe">Subscribe 2.3m</p>
-          ) : (
-            <button className="subscribe">Subscribe</button>
-          )}
+          <button className="subscribe">
+            {!isMobile ? "Subscribe 2.3m" : "Subscribe"}
+          </button>
         </div>
 
         {!isMobile && (

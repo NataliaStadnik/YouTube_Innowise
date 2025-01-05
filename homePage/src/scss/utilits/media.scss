@@ -131,7 +131,13 @@
   }
 
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: 10px 0 13px;
+    z-index: 1000;
+    opacity: 100%;
+    background-color: $color-white;
 
     &__container {
       gap: 24px;
@@ -189,7 +195,7 @@
 
   .main {
     height: max-content;
-    padding: 0 16px;
+    padding: 53px 16px;
   }
 
   .article__img {
@@ -241,6 +247,6 @@
   }
 
   .channel {
-    padding: 25px 0 50px;
+    padding: 25px 0 10px;
   }
 }

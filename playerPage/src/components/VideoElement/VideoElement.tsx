@@ -2,15 +2,10 @@ import { Link } from "react-router-dom";
 import "./style.css";
 import "./media.css";
 import { FC } from "react";
+import { mocksVideoInterface } from "../../mocks/mocksVideo";
 
 interface VideoElementProps {
-  props: {
-    img: string;
-    title: string;
-    author: string;
-    time: string;
-    views: string;
-  };
+  props: mocksVideoInterface;
 }
 
 const VideoElement: FC<VideoElementProps> = ({ props }) => {

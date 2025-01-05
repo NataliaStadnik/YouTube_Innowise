@@ -8,11 +8,7 @@ const Footer = () => {
       <nav className="nav">
         <ul className="list-reset nav-list">
           {mocksFooterBtn.map((elem) => (
-            <FooterElement
-              key={crypto.randomUUID()}
-              img={elem.img}
-              text={elem.text}
-            />
+            <FooterElement key={elem.id} img={elem.img} text={elem.text} />
           ))}
         </ul>
       </nav>
