@@ -1,0 +1,34 @@
+@media (max-width: 1440px) {
+  .header-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 520px) {
+  .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 0 16px;
+  }
+
+  .actions__details {
+    padding: 0;
+  }
+
+  .header-wrapper {
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 0;
+    padding: 0 20px 0 16px;
+  }
+
+  .video-img {
+    height: 180px;
+    margin-bottom: 13px;
+  }
+
+  .video-wrapper {
+    padding-bottom: 30px;
+  }
+}

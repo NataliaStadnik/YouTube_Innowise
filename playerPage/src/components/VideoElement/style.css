@@ -1,0 +1,37 @@
+.next-videos__title {
+  margin-bottom: 12px;
+}
+
+.next-videos__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img__wrapper {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.time {
+  position: absolute;
+  content: '';
+  padding: 2px 10px;
+  bottom: 10px;
+  right: 11px;
+  font-size: 14px;
+  background-color: var(--color-bgr-grey-dark);
+  border-radius: 20px;
+  color: var(--color-white);
+}
+
+.video-list__link .article {
+  transition: opacity .2s ease-in;
+}
+
+.video-list__link:focus-visible .article .title {
+  outline: 1px solid var(--color-red);
+}
+
+.video-list__link:hover:not(:focus-visible) .article {
+  opacity: 70%;
+}

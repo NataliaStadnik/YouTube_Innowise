@@ -1,0 +1,8 @@
+.control-list__btn svg path {
+  transition: fill .2s ease-in;
+}
+
+.control-list__btn:hover svg path,
+.control-list__btn:focus-visible svg path {
+  fill: var(--color-red);
+}

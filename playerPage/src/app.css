@@ -1,0 +1,54 @@
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main {
+  display: flex;
+  column-gap: 40px;
+  padding: 15px 70px 0 80px;
+}
+
+.title {
+  color: var(--color-title-black);
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.title__big {
+  font-size: 36px;
+  line-height: 45px;
+  color: var(--color-video-black);
+}
+
+.img {
+  display: block;
+}
+
+.details {
+  font-size: 20px;
+  color: var(--color-light-grey);
+  letter-spacing: .7px;
+}
+
+.current-player {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  padding-bottom: 50px;
+}

@@ -1,0 +1,22 @@
+@use '../vendor/vars'as *;
+
+.recommended {
+  position: relative;
+  margin-top: -60px;
+  padding: 25px 0;
+  background-color: $color-white;
+  opacity: 100%;
+  z-index: 100;
+
+  &__1::before {
+    content: '3:40';
+  }
+
+  &__2::before {
+    content: '2:12';
+  }
+
+  &__3::before {
+    content: '2:12';
+  }
+}

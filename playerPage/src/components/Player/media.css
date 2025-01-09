@@ -1,0 +1,41 @@
+@media (max-width: 1024px) {
+  .small-player {
+    max-width: 96%;
+    left: 50%;
+    bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 5px 18px;
+    background-color: rgba(61, 61, 61, .6);
+    border-radius: 10px;
+    transform: translateX(-50%);
+  }
+
+  .road-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .road {
+    background-size: 37% 100%;
+  }
+
+  .times {
+    font-size: 10px;
+    line-height: 12.55px;
+  }
+
+  .road {
+    height: 5px;
+    background-size: 22% 100%;
+    border-radius: 2.5px;
+  }
+
+  .control-list__btn--small svg {
+    width: 12px;
+    height: 12px;
+  }
+}

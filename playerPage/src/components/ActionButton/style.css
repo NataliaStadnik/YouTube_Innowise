@@ -1,0 +1,35 @@
+.actions-list__item .actions-list__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(235, 235, 235, .3);
+  color: var(--color-video-black);
+  transition: background-color .2s ease-in;
+}
+
+.actions-list__item:last-child .actions-list__btn {
+  background-color: transparent;
+  padding: 0;
+}
+
+.actions-list__item:nth-child(3) {
+  margin-right: 20px;
+}
+
+.actions-list__item:not(:last-child):hover .actions-list__btn {
+  background-color: rgba(235, 235, 235, .7);
+}
+
+.actions-list__btn:focus-visible {
+  outline: 1px solid var(--color-video-black);
+}
+
+.actions-list__item:last-child button svg path {
+  transition: fill .2s ease-in;
+}
+
+.actions-list__item:last-child:hover button svg path {
+  fill: var(--color-red);
+}
